@@ -42,13 +42,13 @@ function App() {
     };
   }, []);
   return (
-    <div className="min-h-screen w-full flex items-center justify-center page-cronometro">
-      <div className="w-3/6 bg-white rounded-lg p-4 border-2 border-black-200 px-8">
+    <div className="min-h-screen w-full flex items-center justify-center page-cronometro px-8 py-8">
+      <div className="ww-96 bg-white rounded-lg p-4 border-2 border-black-200 px-8">
         <h1 className="font-sans">
           Contagem regressiva para o nosso primeiro encontro!
           <strong className="italic">17 maio 2023</strong>
         </h1>
-        <div className="lista-horas">
+        <div className="lista-horas flex">
           <p className="font-sans">
             Days: <strong>{timeRemaining.days}</strong>
           </p>
