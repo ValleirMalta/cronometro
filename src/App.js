@@ -3,7 +3,7 @@ import "./input.css";
 import "./App.css";
 
 function App() {
-  const targetDate = new Date("2023-06-07T20:30:00");
+  const targetDate = new Date("2023-06-07T21:40:00");
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
   function calculateTimeRemaining() {
     const now = new Date();
