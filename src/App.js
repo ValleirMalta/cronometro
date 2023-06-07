@@ -41,6 +41,14 @@ function App() {
       clearInterval(timer);
     };
   }, []);
+  const [clipPathId, setClipPathId] = useState("");
+
+  useEffect(() => {
+    // Gera um ID único para o elemento <clipPath>
+    const id = `clipPath${Math.random().toString(36).substr(2, 9)}`;
+    setClipPathId(id);
+  }, []);
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center page-cronometro px-8 py-8">
       <div className="ww-96 bg-white rounded-lg p-4 border-2 border-black-200 px-8">
@@ -63,6 +71,11 @@ function App() {
           </p>
         </div>
         <p className="names italic">Valleir e Emely!</p>
+
+        <div class="content-coracao">
+          <div class="square"></div>
+          <div class="circle"></div>
+        </div>
       </div>
     </div>
   );
